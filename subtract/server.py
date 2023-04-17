@@ -28,3 +28,4 @@ def calculate_subtract():
         return {'subtract': total}, 200
     except TypeError:
         return 'Error: request must contain a JSON array of numbers.', 400
+     

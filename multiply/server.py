@@ -31,3 +31,4 @@ def calculate_multiply():
         return {'multiply': total}, 200
     except TypeError:
         return 'Error: request must contain a JSON array of numbers.', 400
+     
