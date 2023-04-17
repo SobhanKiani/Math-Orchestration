@@ -32,4 +32,4 @@ def calculate_division():
         return {'division': total}, 200
     except TypeError:
         return 'Error: request must contain a JSON array of numbers.', 400
-
+ 
