@@ -1,3 +1,5 @@
 gunicorn
 flask
 prometheus-flask-exporter
+pytest
+requests
