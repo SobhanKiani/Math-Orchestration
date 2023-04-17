@@ -9,4 +9,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses : actions/checkout@v2
-      - run : cd subtract && pip install -r requirements && pytest
+      - run : cd subtract && pip install -r requirements.txt && pytest
