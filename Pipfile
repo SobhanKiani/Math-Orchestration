@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+gunicorn = "*"
+flask = "*"
+prometheus-flask-exporter = "*"
+pytest = "*"
+requests = "*"
+flask-testing = "*"
+flask-sqlalchemy = "*"
+locust = "*"
+
+[dev-packages]
+autopep8 = "*"
+
+[requires]
+python_version = "3.9"
