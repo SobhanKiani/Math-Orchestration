@@ -234,6 +234,8 @@ services:
       - division
       - subtract
       - sum
+    environment:
+      - PYTHONUNBUFFERED=1
 
   prometheus:
     image: skn1942/prometheus:latest

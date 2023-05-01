@@ -20,15 +20,14 @@ def calculate_multiply():
     if not data:
         return 'Error: request must contain a JSON object with a list of numbers.', 400
 
-    numbers = data['numbers']
-    if not isinstance(numbers, list):
-        return 'Error: request must contain a JSON array of numbers.', 400
+    a = data['a']
+    c = data['c']
+    if not isinstance(c, int) or not isinstance(a, int):
+        return 'Error: Variables Should Be Numbers', 400
     try:
 
-        total = 1
-        for num in numbers[0:]:
-            total *= num
-        return {'multiply': total}, 200
+        result = {'2a': 2 * a, '4ac': 4 * a *c }
+        return result
     except TypeError:
         return 'Error: request must contain a JSON array of numbers.', 400
      

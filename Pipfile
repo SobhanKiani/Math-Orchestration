@@ -12,6 +12,7 @@ requests = "*"
 flask-testing = "*"
 flask-sqlalchemy = "*"
 locust = "*"
+pika = "*"
 
 [dev-packages]
 autopep8 = "*"

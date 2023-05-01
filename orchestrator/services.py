@@ -4,12 +4,11 @@ import json
 
 
 def post_multiply(args):
-    result = requests.post(MULTIPLY_URL, json={'numbers': args})
+    result = requests.post(MULTIPLY_URL, json={**args})
     if result.ok:
-        return json.loads(result.content)['multiply']
+        return json.loads(result.content)
     else:
         return result.content
-
 
 def post_power(args):
     result = requests.post(POWER_URL, json=args)
