@@ -13,7 +13,5 @@ class User(HttpUser):
 
     @task
     def send_request(self):
-
         data = random.choice(self.data_list)
-
         self.client.post("/equation", json=data)
